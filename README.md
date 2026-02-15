@@ -1,5 +1,6 @@
 # DFIR Practice
 
+
 A collection of hands-on Digital Forensics and Incident Response (DFIR) labs focusing on evidence analysis, investigation methodology, and professional reporting.
 
 ## About This Repository
