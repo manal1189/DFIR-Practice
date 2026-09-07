@@ -16,6 +16,8 @@ Windows Prefetch files are typically stored in:
 C:\Windows\Prefetch
 ```
 
+![Windows Prefetch folder](prefetch-folder.png)
+
 ## Tool Used
 
 **PECmd** by Eric Zimmerman was used to parse the Prefetch file and display its recorded execution details.
@@ -38,6 +40,8 @@ The paths above are examples and should be adjusted to match the evidence and ou
 | Last Run | 2021-04-29 18:22:32 |
 
 The timestamp is reproduced as displayed in the PECmd output.
+
+![PECmd execution details](pecmd-results.png)
 
 ## Interpretation
 
