@@ -14,6 +14,12 @@ Three commands were entered through the Windows Run dialog in the following orde
 
 The RunMRU Registry key was then examined using Registry Editor to identify the recorded entries and their relative order.
 
+![Notepad command in Run](Screenshot%202026-09-07%20230125.png)
+
+![Calculator command in Run](Screenshot%202026-09-07%20232123.png)
+
+![Paint command in Run](Screenshot%202026-09-07%20230410.png)
+
 ## Artifact Location
 
 The RunMRU key was examined at the following Registry path:
@@ -35,6 +41,8 @@ HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU
 | i | notepad\1 | Oldest |
 
 The MRUList value was `kjihgfedcba`. Its first three characters, `kji`, corresponded to `mspaint`, `calc`, and `notepad`, from most recent to oldest.
+
+![RunMRU Registry entries and MRUList](Screenshot%202026-09-07%20231248.png)
 
 
 ## Interpretation
