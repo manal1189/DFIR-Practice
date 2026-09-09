@@ -61,7 +61,7 @@ Several ingest modules were enabled, including:
 - Recent Activity
 - Keyword Search
 
-![Autopsy ingest modules](images/01-autopsy-ingest-modules.png)
+![Autopsy ingest modules](01-autopsy-ingest-modules.png)
 
 ---
 
@@ -73,7 +73,7 @@ The recovered JPG files were reviewed under:
 
 The files were examined using the image preview, file properties, metadata view, and hex view.
 
-![JPG properties in Autopsy](images/02-autopsy-jpg-properties.png)
+![JPG properties in Autopsy](02-autopsy-jpg-preview.jpg)
 
 ---
 
@@ -85,7 +85,7 @@ One of the recovered JPG files started with the following hexadecimal signature:
 
 The `FF D8 FF` bytes are consistent with the beginning of a JPEG file. The `E1` marker indicated that the file contained EXIF information.
 
-![JPEG header and EXIF metadata](images/03-autopsy-jpeg-header-exif.png)
+![JPEG header and EXIF metadata](03-autopsy-image-metadata.jpg)
 
 ---
 
@@ -106,7 +106,7 @@ This information can help connect multimedia files to a particular camera or rec
 
 The identified image files were selected and extracted from the forensic image into the case export folder.
 
-![Extracting image files](images/04-autopsy-file-extraction.png)
+![Extracting image files](04-autopsy-jpeg-hex.jpg)
 
 ---
 
@@ -116,7 +116,7 @@ The Videos folder contained indicators showing that some files had been deleted.
 
 A total of 12 deleted video files were identified. A video file was also opened in an external viewer to verify that its content could still be accessed.
 
-![Deleted video examination](images/05-autopsy-deleted-video.png)
+![Extracting files from Autopsy](05-autopsy-file-extraction.jpg)
 
 ---
 
@@ -128,7 +128,7 @@ The same E01 image was added to an OSForensics case.
 
 Partition 0 was selected to access the file-system data contained inside the image.
 
-![Adding the E01 image](images/06-osforensics-add-e01.png)
+![Deleted video files in Autopsy](06-autopsy-deleted-videos.png)
 
 ---
 
@@ -138,7 +138,7 @@ An index was created over the complete forensic image.
 
 The index made it easier to search for and review multimedia files contained inside the evidence.
 
-![Creating the OSForensics index](images/07-osforensics-index.png)
+![Indexed images in OSForensics](07-osforensics-indexed-images.jpg)
 
 ---
 
@@ -146,7 +146,7 @@ The index made it easier to search for and review multimedia files contained ins
 
 The indexed images view was used to browse the picture files found in the evidence.
 
-![Indexed image results](images/08-osforensics-images.png)
+![JPG preview in OSForensics](08-osforensics-jpg-preview.jpg)
 
 ---
 
@@ -166,7 +166,7 @@ The starting Logical Cluster Number for the file was:
 
 `15,592`
 
-![OSForensics file and hex analysis](images/09-osforensics-hex-exif.png)
+![JPEG Hex analysis in OSForensics](09-osforensics-jpeg-hex.png)
 
 ---
 
@@ -188,7 +188,7 @@ The generated HTML report showed the creation time of `MontereyKitty.m4v` as:
 
 `2009-11-20 09:28:22`
 
-![OSForensics video and report results](images/10-osforensics-results.png)
+![EXIF metadata in OSForensics](10-osforensics-exif-metadata.png)
 
 ---
 
