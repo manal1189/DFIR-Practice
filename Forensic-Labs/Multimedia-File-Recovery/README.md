@@ -128,7 +128,6 @@ The same E01 image was added to an OSForensics case.
 
 Partition 0 was selected to access the file-system data contained inside the image.
 
-![Deleted video files in Autopsy](06-autopsy-deleted-videos.png)
 
 ---
 
