@@ -17,6 +17,7 @@ The application executable is:
 ```text
 charmap.exe
 ```
+![Character Map launched](<Screenshot 2026-09-09 015359.png>)
 
 ---
 
@@ -33,6 +34,7 @@ The executable entry was found under the following `Count` subkey:
 ```text
 Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{CEBFF5CD-ACE2-4F4F-9178-9926F41749EA}\Count
 ```
+![Searching for the encoded UserAssist entry](<Screenshot 2026-09-09 020006.png>)
 
 ---
 
@@ -60,6 +62,8 @@ The complete Registry value was:
 
 The value type was `REG_BINARY`, which means the related activity information was stored as binary data.
 
+![Raw UserAssist Registry entry](<Screenshot 2026-09-09 020829.png>)
+
 ---
 
 ## Parsing the Artifact
@@ -67,6 +71,8 @@ The value type was `REG_BINARY`, which means the related activity information wa
 I used **Registry Explorer** to examine the UserAssist artifact.
 
 The tool decoded the ROT13 value and displayed the execution and focus information in a readable format.
+
+![UserAssist key in Registry Explorer](<Screenshot 2026-09-09 030012.png>)
 
 ## Results
 
@@ -90,7 +96,10 @@ The run counter may include earlier activity from the same user profile, so it d
 
 The timestamp should also be interpreted using the correct timezone for the examined system.
 
+![Parsed UserAssist result](<Screenshot 2026-09-09 032906.png>)
+
 ---
+
 
 ## Forensic Value
 
