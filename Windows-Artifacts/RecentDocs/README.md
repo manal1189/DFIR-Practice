@@ -12,6 +12,7 @@ It can help investigators identify file names and determine their relative order
 
 Windows also creates subkeys based on file extensions, such as `.txt`, `.pdf`, and `.docx`.
 
+![RecentDocs analysis using Registry Explorer](Screenshot%202026-09-11%20001824.png)
 ## Practice
 
 For this practice, I created and opened three text files in the following order:
