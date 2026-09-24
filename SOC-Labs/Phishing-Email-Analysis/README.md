@@ -1,4 +1,4 @@
-# Phishing Email Analysis
+### Phishing Email Analysis
 
 ## Overview
 
@@ -10,7 +10,7 @@ The purpose was to determine whether the message was legitimate or part of a phi
 
 An employee received an email claiming that their account had been disabled because of unusual activity. However, the employee was still able to access the account normally, which made the message suspicious.
 
-![Suspicious email scenario](01-phishing-email.png)
+<img width="892" height="507" alt="Screenshot 2026-09-24 042333" src="https://github.com/user-attachments/assets/4ebbbbd5-1446-4851-bde1-6835db6c236d" />
 
 ## Investigation
 
@@ -32,7 +32,7 @@ The claimed identity did not match the actual sender address. This mismatch was 
 
 Base64 encoding is not automatically malicious, but attackers may use it to make email content harder to inspect quickly.
 
-![Raw email header](02-raw-email-header.png)
+<img width="1527" height="517" alt="Screenshot 2026-09-24 042404" src="https://github.com/user-attachments/assets/523310d2-d77a-470c-b4f2-e9375fe28acc" />
 
 ### 2. Checking the Embedded Link
 
@@ -40,13 +40,13 @@ The suspicious URL found in the email was submitted to VirusTotal to check its r
 
 One of the embedded URLs was classified as **Phishing** by Fortinet. This result strengthened the evidence that the message was attempting to direct the recipient to a malicious or deceptive website.
 
-![VirusTotal URL analysis](03-virustotal-result.png)
+<img width="1260" height="575" alt="Screenshot 2026-09-24 042509" src="https://github.com/user-attachments/assets/189bc8eb-c4a4-436d-ac96-d2b1cf7c7d81" />
 
 ### 3. Reviewing the SPF Result
 
 The email showed an `SPF: Pass` result.
 
-![SPF authentication result](04-spf-result.png)
+<img width="1328" height="247" alt="Screenshot 2026-09-24 042523" src="https://github.com/user-attachments/assets/12cf8304-bc16-44a6-8fba-5ff1751435ea" />
 
 An SPF pass only confirms that the sending server was authorized to send email for the domain used during the SMTP transaction. It does not prove that the message itself is safe or that the displayed sender identity is legitimate.
 
@@ -60,7 +60,7 @@ The sender IP address was reviewed using reverse DNS and WHOIS information.
 - **Reverse DNS:** `mail-am6eur05on2060.outbound.protection.outlook.com`
 - **Infrastructure owner:** Microsoft
 
-![Sender IP and WHOIS information](05-sender-ip-whois.png)
+<img width="1172" height="546" alt="Screenshot 2026-09-24 042627" src="https://github.com/user-attachments/assets/0a8cd70f-0d61-4327-b46d-1fb6af94b42f" />
 
 The IP was associated with Microsoft email infrastructure. However, legitimate cloud infrastructure can still be used by compromised accounts or abused services. Therefore, the IP ownership alone was not enough to classify the email as safe.
 
